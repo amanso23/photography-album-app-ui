@@ -5,10 +5,10 @@ export const albums: Album[] = [
   {
     id: 1,
     tag: "Urban", // Nuevo tag relacionado con estilo urbano
-    title: "City Lights",
+    title: "Once Lights",
     artist: "John Doe",  // Fotógrafo urbano o creador de la colección
     cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Imagen de ciudad nocturna
-    background: backgrounds.mysticNight,
+    background: backgrounds.nebula,
     images: [  // Renombrado de "songs" a "images"
       {
         id: 1,
@@ -167,5 +167,6 @@ export const albums: Album[] = [
         cover: "https://plus.unsplash.com/premium_photo-1739198752532-589131618390?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luz dorada entre montañas
       }
     ]
-  }
+  },
+  
 ];
