@@ -21,7 +21,39 @@ export const albums: Album[] = [
         title: "Moonlit Walk",
         artist: "Robert Brown",
         cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      }
+      },
+      {
+        id: 3,
+        title: "Starlit Avenue",
+        artist: "Jane Smith",
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de ciudad bajo estrellas
+      },
+      {
+        id: 4,
+        title: "Moonlit Walk",
+        artist: "Robert Brown",
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
+      },
+      {
+        id: 5,
+        title: "Starlit Avenue",
+        artist: "Jane Smith",
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de ciudad bajo estrellas
+      },
+      {
+        id: 6,
+        title: "Moonlit Walk",
+        artist: "Robert Brown",
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
+      },
+      {
+        id: 7,
+        title: "Moonlit Walk",
+        artist: "Robert Brown",
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
+      },
+      
+      
     ]
   },
   {
