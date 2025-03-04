@@ -1,0 +1,27 @@
+---
+
+import { albums } from "../lib/albums";
+
+---
+
+
+<div class="flex flex-col gap-y-6">
+    <h3 class="font-semibold text-sm">Album</h3>
+    <ul class="flex flex-col gap-y-4">
+        {albums.map(({id, cover, title, artist}) => (
+            <li>
+                <a class="flex gap-x-3" href={`/album/${id}`}>
+                    <img 
+                        src={cover} 
+                        alt={title} 
+                        class="size-12"  
+                    />
+                    <div>
+                        <h1 class="font-medium text-md">{title}</h1>
+                        <h3 class="text-xs opacity-70 font-light">{artist}</h3>
+                    </div>
+                </a>
+            </li>
+        ))}
+    </ul>
+</div>
