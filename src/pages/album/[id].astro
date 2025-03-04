@@ -1,0 +1,76 @@
+---
+
+import ImageCard from '../../components/ImageCard.astro';
+import Layout from '../../layouts/Layout.astro';
+import { albums } from '../../lib/albums';
+
+export const getStaticPaths = async() => {
+    return albums.map((album) => {
+        return {
+            params: {id: album.id},
+            props: {...album}
+        };
+    });
+}
+
+const {
+    id
+} = Astro.params;
+
+const {
+    title,
+    tag,
+    cover,
+    artist,
+    images,
+    background
+} = Astro.props;
+
+---
+
+<Layout title={title}>
+    <div class={`flex flex-col gap-y-12 flex-1 p-12 ${background} page rounded-md`}>
+       <div class="flex justify-around">
+            <div class="flex flex-col gap-y-8">
+                <h3 class="text-4xl font-bold">{tag}</h3>
+                <h1 class="text-8xl font-bold">{title}</h1>
+                <h1 class="text-3xl opacity-75 font-light">{artist}</h1>
+                <button class="text-xl px-10 py-1 self-start rounded-full bg-white/20 backdrop-blur-xs ">
+                    Play
+                </button>
+            </div>
+            <picture>
+                <img src={cover} alt={title} class="rounded-sm max-w-xs h-auto"  >
+            </picture>
+       </div>
+
+       <ul class="flex flex-wrap gap-4">
+            {images.map((image) => (
+                <ImageCard image={image} />
+            ))}
+
+       </ul>
+    </div>
+</Layout>
+
+<style>
+    .page{
+        background-size: 200% 200%;
+        animation: move 10s infinite backwards;
+    }
+
+    @keyframes move {
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+</style>
+
+
+
