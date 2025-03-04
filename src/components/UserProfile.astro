@@ -1,0 +1,28 @@
+---
+
+import { user } from "../lib/user";
+import PlanBadge from "./PlanBadge.astro";
+
+const {
+    name,
+    avatar,
+    plan
+} = user;
+
+---
+
+<div class="flex gap-x-6">
+    <picture>
+        <img 
+            src={avatar}
+            class="aspect-square size-14 rounded-full"
+            alt={name}
+        >
+    </picture>
+
+    <div class="flex flex-col gap-y-1">
+        <h1 class="text-xl font-bold">{name}</h1>
+        <PlanBadge plan={plan} />
+    </div>
+
+</div>
