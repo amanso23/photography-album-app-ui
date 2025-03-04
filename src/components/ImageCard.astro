@@ -1,0 +1,38 @@
+---
+import type { TransitionAnimationValue } from 'astro';
+import type { Image } from '../types'
+
+interface Props {
+    image: Image;
+}
+
+const { image } = Astro.props;
+
+const { 
+    id,
+    title,
+    artist,
+    cover
+} = image;
+
+---
+
+<a 
+    href={`/album/image/${id}`}
+    class="max-w-[200px] h-auto rounded-lg relative group overflow-hidden"
+    
+    >
+        <picture class="w-full h-full object-cover rounded-lg ">
+            <img 
+                src={cover} 
+                alt={`img-${title}`}
+                class="rounded-lg w-full h-full transition-all duration-300 group-hover:scale-120"
+                transition:animate={`transition-cover-${id}` as TransitionAnimationValue } 
+            >
+        </picture>
+
+        <div class="absolute bottom-0 text-center bg-gradient-to-t from-[#0c0c0c] to-transparent w-full rounded-lg">
+            <h1 class="font-semibold text-lg">{title}</h1>
+            <h3 class="opacity-65 -mt-2">{artist}</h3>
+        </div>
+</a>
