@@ -22,34 +22,30 @@ const {
     tag,
     cover,
     artist,
-    images,
-    background
+    gallery,
+    background,
+    description
 } = Astro.props;
 
 ---
 
 <Layout title={title}>
-    <div class={`flex flex-col flex-1 gap-y-[6vh] p-[6vh] ${background} page rounded-md mt-2 mr-2 mb-2`}>
+    <div class={`flex flex-col flex-1 gap-y-[12vh] p-[6vh] ${background} page mt-2 mr-2 mb-2`}>
        <div class="flex justify-between">
             <div class="flex flex-col gap-y-[4vh]">
-                <h3 class="text-[4vh] tracking-widest font-semibold uppercase">{tag}</h3>
+                <h3 class="text-[3.5vh] tracking-widest uppercase">{artist}</h3>
                 <h1 class="text-[17vh] font-bold leading-none w-[80vh]">{title}</h1>
-                <h1 class="text-[2vh] opacity-75 font-extralight w-[80vh] mt-8 ">This album is a masterpiece crafted by talented artists. The essence of photography comes to life in every image. Immerse yourself in this unique visual experience presented by <b class="text-white underline">{artist}.</b></h1>
-
-                <!-- <button class="text-xl px-10 py-1 self-start rounded-full bg-white/20 backdrop-blur-xs ">
-                    Play
-                </button> -->
+                <p class="text-[2.2vh] opacity-75 font-extralight w-[80vh] mt-8">{description}</p>
             </div>
 
-            
             <picture>
-                <img src={cover} alt={title} class="rounded-sm w-[45vh] h-auto aspect-square">
+                <img src={cover} alt={title} class="w-[45vh] h-auto aspect-square">
             </picture>
        </div>
 
        <h1 class="font-light text-[3vh]">Gallery</h1>
-       <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4">	
-            {images.map((image) => (
+       <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4 -mt-[7vh]">	
+            {gallery.map((image) => (
                 <ImageCard image={image} />
             ))}
        </div>

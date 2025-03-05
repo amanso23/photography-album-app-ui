@@ -7,13 +7,12 @@ export interface Album {
     cover: string;
     artist: string;
     background: string;
-    images: Image[]
+    gallery: Image[];
+    description: string;
   }
 
   export interface Image {
     id: number;
-    title: string;
-    artist: string;
     cover: string;
   }
 

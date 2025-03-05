@@ -1,0 +1,27 @@
+---
+
+import { footerItems } from "../lib/footerItems"
+const year = new Date().getFullYear();
+
+---
+
+
+
+<footer>
+    <ul class="flex flex-wrap text-[1vh] gap-x-4 opacity-55">
+        {footerItems.map(({label, href}) => (
+            <li class="underline">
+                <a href={href
+                    ? href
+                    : "#"
+                }>
+                    {label}
+                </a>
+            </li>
+        ))}
+        <li>
+            © {year} Art Gallery
+        </li>
+        
+    </ul>
+</footer>

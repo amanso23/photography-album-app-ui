@@ -10,8 +10,6 @@ const { image } = Astro.props;
 
 const { 
     id,
-    title,
-    artist,
     cover
 } = image;
 
@@ -19,19 +17,14 @@ const {
 
 <a 
     href={`/album/image/${id}`}
-    class="w-full h-full aspect-square rounded-md relative group overflow-hidden"
+    class="w-full h-full aspect-square group overflow-hidden"
     >
         <picture>
             <img 
                 src={cover} 
-                alt={`img-${title}`}
-                class="rounded-md aspect-square w-full h-full transition-all duration-300 group-hover:scale-120 object-cover"
+                alt={`img-${id}`}
+                class="aspect-square w-full h-full transition-all duration-300 group-hover:scale-120 object-cover"
                 transition:animate={`transition-cover-${id}` as TransitionAnimationValue } 
             >
         </picture>
-
-        <div class="absolute bottom-0 text-center bg-gradient-to-t from-[#000000] to-transparent w-full rounded-md">
-            <h1 class="font-semibold text-lg">{title}</h1>
-            <h3 class="opacity-65 -mt-2">{artist}</h3>
-        </div>
 </a>
