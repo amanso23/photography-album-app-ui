@@ -31,16 +31,16 @@ const {
 ---
 
 <Layout title={title}>
-    <div class={`flex flex-col flex-1 gap-y-[12vh] p-[6vh] ${background} page m-2`}>
-       <div class="flex flex-col gap-y-[8vh] xl:flex-row justify-between">
+    <div class={`flex flex-col flex-1 gap-y-[12vh] p-6 md:p-[10vh] lg:p-[6vh] ${background} page m-2`}>
+       <div class="flex flex-col gap-y-[8vh] lg:flex-row justify-between">
             <div class="flex flex-col gap-y-[4vh]">
-                <h3 class="text-[3vh] md:text-[3.5vh] tracking-widest uppercase">{artist}</h3>
-                <h1 class="text-[14vh] lg:text-[17vh] font-bold leading-none md:w-[80vh]">{title}</h1>
-                <p class="text-[2vh] opacity-75 font-extralight lg:w-[70vh] mt-8">{description}</p>
+                <h3 class="text-[4vh] md:text-[4.5vh] lg:text-[3.5vh] tracking-widest uppercase">{artist}</h3>
+                <h1 class="text-[17vh] md:text-[22vh] lg:text-[14.5vh] font-bold leading-none md:w-full xl:w-[80vh]">{title}</h1>
+                <p class="text-[2.5vh] md:text-[3vh] lg:text-[2.4vh] opacity-75 font-extralight lg:w-[70vh] mt-3 md:mt-6">{description}</p>
             </div>
 
             <picture>
-                <img src={cover} alt={title} class="w-full lg:w-[55vh] h-auto aspect-square">
+                <img src={cover} alt={title} class="w-full lg:w-[53vh] h-auto aspect-square">
             </picture>
        </div>
 
