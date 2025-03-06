@@ -5,23 +5,23 @@ import { albums } from "../lib/albums";
 ---
 
 
-<div class="flex flex-col gap-y-6">
+<section class="flex flex-col gap-y-[4vh]">
     <h3 class="font-semibold text-[1.8vh]">Album</h3>
     <ul class="flex flex-col gap-y-4">
         {albums.map(({id, cover, title, artist}) => (
             <li>
-                <a class="flex gap-x-3" href={`/album/${id}`}>
+                <a class="flex gap-x-[1.5vh]" href={`/albums/${id}`}>
                     <img 
                         src={cover} 
                         alt={title} 
                         class="size-[5.5vh]"  
                     />
-                    <div>
+                    <span>
                         <h1 class="font-medium text-[2.2vh]">{title}</h1>
                         <h3 class="text-[1.7vh] opacity-70 font-light">{artist}</h3>
-                    </div>
+                    </span>
                 </a>
             </li>
         ))}
     </ul>
-</div>
+</section>
