@@ -4,27 +4,28 @@ import type { Image } from '../types'
 
 interface Props {
     image: Image;
+    albumId: number;
 }
 
-const { image } = Astro.props;
+const { image, albumId } = Astro.props;
 
 const { 
-    id,
+    id: imageId,
     cover
 } = image;
 
 ---
 
 <a 
-    href={`/album/image/${id}`}
+    href={`/albums/${albumId}/${imageId}`}
     class="w-full h-full aspect-square group overflow-hidden"
     >
         <picture>
             <img 
                 src={cover} 
-                alt={`img-${id}`}
-                class="aspect-square w-full h-full transition-all duration-300 group-hover:scale-120 object-cover"
-                transition:animate={`transition-cover-${id}` as TransitionAnimationValue } 
+                alt={`img-${imageId}`}
+                class="aspect-square w-full h-full transition-all duration-300 group-hover:scale-105 object-cover"
+                transition:name={`transition-cover-${imageId}` } 
             >
         </picture>
 </a>

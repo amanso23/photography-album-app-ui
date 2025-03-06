@@ -13,6 +13,7 @@ export interface Album {
 
   export interface Image {
     id: number;
+    title: string;
     cover: string;
   }
 

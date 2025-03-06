@@ -13,32 +13,70 @@ export const albums: Album[] = [
     gallery: [  
       {
         id: 1,
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de ciudad bajo estrellas
+        title: "City Lights", // Título de la imagen
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       {
         id: 2,
+        title: "Moonlit Alley", // Título de la imagen
         cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
       },
       {
         id: 3,
+        title: "City Under Stars", // Título de la imagen
         cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de ciudad bajo estrellas
       },
       {
         id: 4,
+        title: "Moonlit Alley", // Título de la imagen
         cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
       },
       {
         id: 5,
+        title: "City Under Stars", // Título de la imagen
         cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de ciudad bajo estrellas
       },
       {
         id: 6,
+        title: "Moonlit Alley", // Título de la imagen
         cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
       },
       {
         id: 7,
+        title: "Moonlit Alley", // Título de la imagen
         cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
       },
+      {
+        id: 8,
+        title: "Moonlit Alley", // Título de la imagen
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
+      },
+      {
+        id: 9,
+        title: "Moonlit Alley", // Título de la imagen
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
+      },
+      {
+        id: 10,
+        title: "Moonlit Alley", // Título de la imagen
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
+      },
+      {
+        id: 11,
+        title: "Moonlit Alley", // Título de la imagen
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
+      },
+      {
+        id: 12,
+        title: "Moonlit Alley", // Título de la imagen
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
+      },
+      {
+        id: 13,
+        title: "Moonlit Alley", // Título de la imagen
+        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
+      },
+    
       
       
     ]
@@ -54,10 +92,12 @@ export const albums: Album[] = [
     gallery: [
       {
         id: 1,
+        title: "Colorful Abstract", // Título de la imagen
         cover: "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de colores brillantes
       },
       {
         id: 2,
+        title: "Abstract Patterns", // Título de la imagen
         cover: "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luz desvaneciéndose
       }
     ]
@@ -73,10 +113,12 @@ export const albums: Album[] = [
     gallery: [
       {
         id: 1,
+        title: "Future City", // Título de la imagen
         cover: "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luces futuristas en ciudad
       },
       {
         id: 2,
+        title: "Digital World", // Título de la imagen
         cover: "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de paisaje digital
       }
     ]
@@ -92,26 +134,32 @@ export const albums: Album[] = [
     gallery: [
       {
         id: 1,
+        title: "Tranquil Lake", // Título de la imagen
         cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de paisaje tranquilo
       },
       {
         id: 2,
+        title: "Misty Forest", // Título de la imagen
         cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de niebla en el bosque
       },
       {
         id: 3,
+        title: "Misty Forest", // Título de la imagen
         cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de niebla en el bosque
       },
       {
         id: 4,
+        title: "Misty Forest", // Título de la imagen
         cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de niebla en el bosque
       },
       {
         id: 5,
+        title: "Misty Forest", // Título de la imagen
         cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de niebla en el bosque
       },
       {
         id: 6,
+        title: "Misty Forest", // Título de la imagen
         cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de niebla en el bosque
       }
     ]
@@ -127,10 +175,12 @@ export const albums: Album[] = [
     gallery: [
       {
         id: 1,
+        title: "Emerald Lake", // Título de la imagen
         cover: "https://plus.unsplash.com/premium_photo-1739198752532-589131618390?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de lago tranquilo
       },
       {
         id: 2,
+        title: "Golden Light", // Título de la imagen
         cover: "https://plus.unsplash.com/premium_photo-1739198752532-589131618390?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luz dorada entre montañas
       }
     ]
