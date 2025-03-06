@@ -1,190 +1,77 @@
-import type { Album } from "../types";  // Cambié Playlist a Album
+import type { Album } from "../types";  
 import { backgrounds } from "./backgrounds";
 
 export const albums: Album[] = [
   {
     id: 1,
-    tag: "Urban",
-    title: "Once Lights",
-    artist: "John Doe",
-    cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Imagen de ciudad nocturna
+    title: "Concrete Realms",
+    artist: "Vesper",
+    cover: "https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
     background: backgrounds.nebula,
-    description: "A collection of urban night photography showcasing the city's vibrant lights. From quiet streets to bustling neon-lit avenues, these images capture the essence and energy of the metropolis after dark.",
+    description: "A photographic journey into the raw, monolithic beauty of brutalist architecture. Stark lines, heavy concrete, and the poetry of shadows.",
     gallery: [  
-      {
-        id: 1,
-        title: "City Lights", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      },
-      {
-        id: 2,
-        title: "Moonlit Alley", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      },
-      {
-        id: 3,
-        title: "City Under Stars", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de ciudad bajo estrellas
-      },
-      {
-        id: 4,
-        title: "Moonlit Alley", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      },
-      {
-        id: 5,
-        title: "City Under Stars", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de ciudad bajo estrellas
-      },
-      {
-        id: 6,
-        title: "Moonlit Alley", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      },
-      {
-        id: 7,
-        title: "Moonlit Alley", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      },
-      {
-        id: 8,
-        title: "Moonlit Alley", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      },
-      {
-        id: 9,
-        title: "Moonlit Alley", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      },
-      {
-        id: 10,
-        title: "Moonlit Alley", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      },
-      {
-        id: 11,
-        title: "Moonlit Alley", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      },
-      {
-        id: 12,
-        title: "Moonlit Alley", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      },
-      {
-        id: 13,
-        title: "Moonlit Alley", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1678982286887-e2285e766130?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luna sobre callejón
-      },
-    
-      
-      
+      { id: 1, title: "Cold Geometry", cover: "https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd" },
+      { id: 2, title: "Concrete Silence", cover: "https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd" },
+      { id: 3, title: "Brutalist Dream", cover: "https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd" },
+      { id: 4, title: "Urban Maze", cover: "https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd" },
+      { id: 5, title: "Shadows & Forms", cover: "https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd" }
     ]
   },
   {
     id: 2,
-    tag: "Abstract", // Tag para estilo abstracto
-    title: "Waves of Color",
-    artist: "Sara Lee",
-    cover: "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Imagen de pintura abstracta
+    title: "Void & Form",
+    artist: "E. Nova",
+    cover: "https://images.unsplash.com/photo-1533158170721-c66e9e3bea2b", 
     background: backgrounds.sunset,
-    description: "A collection of abstract paintings featuring bold, vibrant colors. Each piece explores dynamic forms, textures, and the energy of color.",
+    description: "Exploring the essence of minimalism through photography—geometry, symmetry, and the power of negative space.",
     gallery: [
-      {
-        id: 1,
-        title: "Colorful Abstract", // Título de la imagen
-        cover: "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de colores brillantes
-      },
-      {
-        id: 2,
-        title: "Abstract Patterns", // Título de la imagen
-        cover: "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luz desvaneciéndose
-      }
+      { id: 1, title: "Horizon of Light", cover: "https://images.unsplash.com/photo-1533158170721-c66e9e3bea2b" },
+      { id: 2, title: "Muted Tones", cover: "https://images.unsplash.com/photo-1533158170721-c66e9e3bea2b" },
+      { id: 3, title: "Minimal Essence", cover: "https://images.unsplash.com/photo-1533158170721-c66e9e3bea2b" },
+      { id: 4, title: "Silent Patterns", cover: "https://images.unsplash.com/photo-1533158170721-c66e9e3bea2b" },
+      { id: 5, title: "Negative Space", cover: "https://images.unsplash.com/photo-1533158170721-c66e9e3bea2b" }
     ]
   },
   {
     id: 3,
-    tag: "Futuristic", // Tag para estilo futurista
-    title: "Beyond the Horizon",
-    artist: "Alex Green",
-    cover: "https://images.unsplash.com/photo-1513553404607-988bf2703777?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Imagen futurista de ciudad
+    title: "Neon Density",
+    artist: "Kelton Solaris",
+    cover: "https://images.unsplash.com/photo-1629729802306-2c196af7eef5", 
     background: backgrounds.deepSpace,
-    description: "A collection of futuristic images that delve into the unknown, blending imagination, technology, and the mysteries of what lies ahead.",
+    description: "A study of the modern metropolis—skylines, reflections, and the interplay of artificial light with urban structures.",
     gallery: [
-      {
-        id: 1,
-        title: "Future City", // Título de la imagen
-        cover: "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luces futuristas en ciudad
-      },
-      {
-        id: 2,
-        title: "Digital World", // Título de la imagen
-        cover: "https://images.unsplash.com/photo-1507692812060-98338d07aca3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de paisaje digital
-      }
+      { id: 1, title: "Glass Towers", cover: "https://images.unsplash.com/photo-1629729802306-2c196af7eef5" },
+      { id: 2, title: "Neon Corridors", cover: "https://images.unsplash.com/photo-1629729802306-2c196af7eef5" },
+      { id: 3, title: "Urban Glow", cover: "https://images.unsplash.com/photo-1629729802306-2c196af7eef5" },
+      { id: 4, title: "Electric Grid", cover: "https://images.unsplash.com/photo-1629729802306-2c196af7eef5" },
+      { id: 5, title: "City Reflections", cover: "https://images.unsplash.com/photo-1629729802306-2c196af7eef5" }
     ]
   },
   {
     id: 4,
-    tag: "Nature", // Tag para estilo natural
-    title: "Golden Hour",
-    artist: "Michael Brown",
-    cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Imagen de atardecer dorado
+    title: "Steel & Shadow",
+    artist: "Morrow",
+    cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4", 
     background: backgrounds.auroraBoreal,
-    description: "A collection of nature photographs captured during the golden hour, showcasing warm, soft light that enhances the beauty of landscapes and wildlife.",
+    description: "A tribute to industrial architecture—bridges, factories, and the intricate dance between steel and shadow.",
     gallery: [
-      {
-        id: 1,
-        title: "Tranquil Lake", // Título de la imagen
-        cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de paisaje tranquilo
-      },
-      {
-        id: 2,
-        title: "Misty Forest", // Título de la imagen
-        cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de niebla en el bosque
-      },
-      {
-        id: 3,
-        title: "Misty Forest", // Título de la imagen
-        cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de niebla en el bosque
-      },
-      {
-        id: 4,
-        title: "Misty Forest", // Título de la imagen
-        cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de niebla en el bosque
-      },
-      {
-        id: 5,
-        title: "Misty Forest", // Título de la imagen
-        cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de niebla en el bosque
-      },
-      {
-        id: 6,
-        title: "Misty Forest", // Título de la imagen
-        cover: "https://images.unsplash.com/photo-1669050589643-a06e01d7391e?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de niebla en el bosque
-      }
+      { id: 1, title: "Echo of Machines", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4" },
+      { id: 2, title: "Iron Horizon", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4" },
+      { id: 3, title: "Steel Web", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4" },
+      { id: 4, title: "Metal Veins", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4" },
+      { id: 5, title: "Industrial Shadows", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4" }
     ]
   },
   {
     id: 5,
-    tag: "Conceptual", // Tag para estilo conceptual
-    title: "Emerald Dreams",
-    artist: "Olivia Jones",
-    cover: "https://plus.unsplash.com/premium_photo-1739198752532-589131618390?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Imagen de naturaleza verde
+    title: "Hyper Ocean",
+    artist: "Zalik Orion",
+    cover: "https://plus.unsplash.com/premium_photo-1739198752532-589131618390?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
     background: backgrounds.emerald,
-    description: "A collection of conceptual images that capture the beauty of nature through creative perspectives, symbolism, and artistic expression.",
+    description: "A glimpse into futuristic architecture—structures that challenge gravity, redefine form, and stretch the limits of human imagination.",
     gallery: [
-      {
-        id: 1,
-        title: "Emerald Lake", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1739198752532-589131618390?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de lago tranquilo
-      },
-      {
-        id: 2,
-        title: "Golden Light", // Título de la imagen
-        cover: "https://plus.unsplash.com/premium_photo-1739198752532-589131618390?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Imagen de luz dorada entre montañas
-      }
+      { id: 1, title: "Light Cathedral", cover: "https://plus.unsplash.com/premium_photo-1739198752532-589131618390?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+      { id: 2, title: "Synthetic Horizons", cover: "https://plus.unsplash.com/premium_photo-1739198752532-589131618390?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
     ]
-  },
-  
-  
+  }
 ];
