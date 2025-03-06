@@ -12,7 +12,7 @@ export const getStaticPaths = async() => {
                         albumId: album.id, 
                         imageId: image.id
                     },
-                props: {...image}
+                props: {...image, album: album.title}
             }
         })
     })
@@ -25,14 +25,15 @@ const {
 
 const { 
     title,
-    cover
+    cover,
+    album
 } = Astro.props;
 
 
 ---
 
-<Layout title={title}>
-    <div class="mt-2 mr-2 mb-2">
+<Layout title={`${album} - ${title}`}>
+    <div>
         <img src={cover} class="aspect-square w-[40vh] h-auto object-cover" alt={title} transition:name={`transition-cover-${imageId}`  }  />
     
     </div>
