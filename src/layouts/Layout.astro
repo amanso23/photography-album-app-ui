@@ -3,6 +3,7 @@
 import ClientRouter from "astro/components/ClientRouter.astro";
 
 import Side from "../components/Side.astro";
+import Info from "../components/Info.astro";
 interface Props {
 	title: string;
 }
@@ -29,9 +30,10 @@ const {
 		<title>{title}</title>
 	</head>
 	<body class="poppins-regular min-h-screen">
-		<main class="lg:flex gap-x-2 w-full">
+		<main class="lg:flex w-full">
 			<Side />
 			<slot />
+			<Info />
 		</main>
 	</body>
 </html>
