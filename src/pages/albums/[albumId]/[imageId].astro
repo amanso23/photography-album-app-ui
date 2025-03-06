@@ -1,0 +1,39 @@
+---
+
+import Layout from '../../../layouts/Layout.astro';
+import { albums } from '../../../lib/albums';
+
+export const getStaticPaths = async() => {
+    return albums.flatMap((album) => {
+        return album.gallery.map((image) => {
+            return {
+                params: 
+                    {   
+                        albumId: album.id, 
+                        imageId: image.id
+                    },
+                props: {...image}
+            }
+        })
+    })
+}
+
+const { 
+    imageId
+} = Astro.params;
+
+
+const { 
+    title,
+    cover
+} = Astro.props;
+
+
+---
+
+<Layout title={title}>
+    <div class="mt-2 mr-2 mb-2">
+        <img src={cover} class="aspect-square w-[40vh] h-auto object-cover" alt={title} transition:name={`transition-cover-${imageId}`  }  />
+    
+    </div>
+</Layout>
