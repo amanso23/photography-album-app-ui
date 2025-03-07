@@ -1,5 +1,4 @@
 export const backgrounds = {
-  galaxy: "bg-[linear-gradient(40deg,#0d1b2a,#1b263b,#415a77,#778da9)]",
   emerald: "bg-[linear-gradient(40deg,#50c878,#3aa66a,#2e8b57,#007f5f)]",
   auroraBoreal: "bg-[linear-gradient(40deg,#1e3c72,#2a5298,#6a097d,#ffbd69)]",
   nebula: "bg-[linear-gradient(40deg,#6a1acd,#b43b5e,#ff2493,#ff4500)]",
@@ -11,5 +10,5 @@ export const backgrounds = {
   cosmic: "bg-[linear-gradient(40deg,#360033,#550a8a,#7303c0,#a80077,#ec38bc)]",
   sunrise: "bg-[linear-gradient(40deg,#ff512f,#ff7733,#ffb400,#ffd700)]",
   mysticNight: "bg-[linear-gradient(40deg,#3a0f29,#261a3a,#290b27,#042f3a,#0d0c13)]",
-  home: "bg-[linear-gradient(40deg,#0d1b2a,#1b263b,#415a77,#778da9)]"
+  home: "bg-[linear-gradient(40deg,#0d1b2a,#1b263b,#415a77,#778da9)]",
 };
