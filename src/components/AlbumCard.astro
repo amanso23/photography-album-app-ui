@@ -40,28 +40,31 @@ const {
 
 ---
 
-<article>
+<article class="group overflow-hidden relative">
     <Anchor
         href={`/albums/${albumId}`}
         title={`Link to the album ${title}`}
         class={topClass}
     >
 
-        {type === "home" ? <img 
-        src={cover} 
-        alt={title}
-        class={imgClass}
-        transition:name={type === "home" ? `transition-album-cover-${albumId}` : ""}
-    />
+        {type === "home" 
+            ? 
+        <img 
+            src={cover} 
+            alt={title}
+            class={imgClass}
+            transition:name={type === "home" ? `transition-album-cover-${albumId}` : ""}
+        />
 
-    <div>
-        
-    </div> : <img 
-        src={cover} 
-        alt={title}
-        class={imgClass}
-       
-    />
+            <div class="absolute bottom-0 right-0">
+                <h2 class="absolute bottom-0 right-0 p-2 text-black bg-white/70 text-[2vh] text-nowrap" >{title}</h2>
+            </div>
+            : 
+        <img 
+            src={cover} 
+            alt={title}
+            class={imgClass}
+        />
 
     <div>
         <h1 class={h1Class} >{title}</h1>
