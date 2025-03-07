@@ -1,0 +1,75 @@
+---
+import type { Album } from '../types'
+import Anchor from './Anchor.astro';
+import { classes } from '../lib/classes';
+
+interface Props {
+    type: 'side' | 'home';
+    album: Album;
+}
+
+const {
+    album,
+    type
+} = Astro.props;
+
+const {
+    id: albumId,
+    title,
+    artist,
+    cover
+} = album;
+
+let albumClasses;
+
+switch(type){
+    case 'side': 
+        albumClasses = classes.album.side;
+        break;
+    case 'home':
+        albumClasses = classes.album.home;
+        break;
+}
+
+const {
+    h1: h1Class,
+    h3: h3Class,
+    image: imgClass,
+    topClass
+} = albumClasses;
+
+---
+
+<article>
+    <Anchor
+        href={`/albums/${albumId}`}
+        title={`Link to the album ${title}`}
+        class={topClass}
+    >
+
+        {type === "home" ? <img 
+        src={cover} 
+        alt={title}
+        class={imgClass}
+        transition:name={type === "home" ? `transition-album-cover-${albumId}` : ""}
+    />
+
+    <div>
+        
+    </div> : <img 
+        src={cover} 
+        alt={title}
+        class={imgClass}
+       
+    />
+
+    <div>
+        <h1 class={h1Class} >{title}</h1>
+        <h3 class={h3Class} >{artist}</h3>
+    </div>  }
+
+
+        
+    </Anchor>
+</article>
+
