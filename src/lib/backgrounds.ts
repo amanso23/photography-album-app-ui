@@ -10,5 +10,6 @@ export const backgrounds = {
   forest: "bg-[linear-gradient(40deg,#154734,#1e5631,#2f8132,#6dbb48)]",
   cosmic: "bg-[linear-gradient(40deg,#360033,#550a8a,#7303c0,#a80077,#ec38bc)]",
   sunrise: "bg-[linear-gradient(40deg,#ff512f,#ff7733,#ffb400,#ffd700)]",
-  mysticNight: "bg-[linear-gradient(40deg,#3a0f29,#261a3a,#290b27,#042f3a,#0d0c13)]"
+  mysticNight: "bg-[linear-gradient(40deg,#3a0f29,#261a3a,#290b27,#042f3a,#0d0c13)]",
+  home: "bg-[linear-gradient(40deg,#0d1b2a,#1b263b,#415a77,#778da9)]"
 };

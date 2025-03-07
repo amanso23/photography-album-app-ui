@@ -1,5 +1,7 @@
 ---
 
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import SectionContainer from '../../../components/SectionContainer.astro';
 import Layout from '../../../layouts/Layout.astro';
 import { albums } from '../../../lib/albums';
 
@@ -12,29 +14,41 @@ export const getStaticPaths = async() => {
                         albumId: album.id, 
                         imageId: image.id
                     },
-                props: {...image, album: album.title}
+                props: {...image, albumTitle: album.title}
             }
         })
     })
 }
 
 const { 
+    albumId,
     imageId
 } = Astro.params;
-
 
 const { 
     title,
     cover,
-    album
+    albumTitle,
+    background
 } = Astro.props;
-
 
 ---
 
-<Layout title={`${album} - ${title}`}>
-    <div>
-        <img src={cover} class="aspect-square w-[40vh] h-auto object-cover" alt={title} transition:name={`transition-cover-${imageId}`  }  />
+<Layout favicon={cover} title={`${albumTitle} - ${title}`}>
     
-    </div>
+    <SectionContainer class={`flex flex-col ${background} `}>
+        <Breadcrumb
+            albumId={albumId}
+            albumTitle={albumTitle}
+            imageTitle={title}
+        />
+        
+        <img 
+            src={cover} 
+            class="aspect-square w-[40vh] h-auto object-cover mt-10" 
+            alt={title} 
+            transition:name={`transition-cover-${imageId}`}  
+        />
+    
+    </SectionContainer>
 </Layout>

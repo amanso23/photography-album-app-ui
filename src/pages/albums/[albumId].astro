@@ -3,6 +3,8 @@
 import ImageCard from '../../components/ImageCard.astro';
 import Layout from '../../layouts/Layout.astro';
 import { albums } from '../../lib/albums';
+import SectionContainer from '../../components/SectionContainer.astro';
+import Side from '../../components/Side.astro';
 
 export const prerender =  true;
 
@@ -30,44 +32,29 @@ const {
 
 ---
 
-<Layout title={title}>
-    <div class={`flex flex-col flex-1 gap-y-[12vh] p-6 md:p-[10vh] lg:p-[6vh] ${background} page m-2`}>
+<Layout favicon={cover} title={title}>
+    <SectionContainer class={`flex flex-col flex-1 gap-y-[12vh] ${background}`}>
        <div class="flex flex-col gap-y-[8vh] lg:flex-row justify-between">
             <div class="flex flex-col gap-y-[4vh]">
-                <h3 class="text-[4vh] md:text-[4.5vh] lg:text-[3.5vh] tracking-widest uppercase">{artist}</h3>
-                <h1 class="text-[17vh] md:text-[22vh] lg:text-[14.5vh] font-bold leading-none md:w-full xl:w-[80vh]">{title}</h1>
-                <p class="text-[2.5vh] md:text-[3vh] lg:text-[2.4vh] opacity-75 font-extralight lg:w-[70vh] mt-3 md:mt-6">{description}</p>
+                <h3 class="text-[3.5vh] md:text-[4.5vh] lg:text-[3.5vh] tracking-widest uppercase" transition:name={`transition-album-artist-${albumId}`}>{artist}</h3>
+                <h1 class="text-[11vh] md:text-[22vh] lg:text-[14.5vh] font-bold leading-none w-full xl:w-[80vh]" transition:name={`transition-album-title-${albumId}`}>{title}</h1>
+                <p class="text-[2.5vh] md:text-[3vh] lg:text-[2.4vh] opacity-75 font-extralight lg:w-[70vh] mt-3 md:mt-6 text-pretty">{description}</p>
             </div>
 
-            <picture>
-                <img src={cover} alt={title} class="w-full lg:w-[53vh] h-auto aspect-square">
-            </picture>
+            <img 
+                src={cover} 
+                alt={title} 
+                class="w-full lg:w-[53vh] h-auto aspect-square"  
+                transition:name={`transition-album-cover-${albumId}`}
+            />
+            
        </div>
 
-       <h1 class="font-light text-[3vh]">Gallery</h1>
+       <h1 class="font-extralight text-[2vh] px-2 py-2 backdrop-blur-xs bg-white/20 self-start">{gallery.length} images</h1>
        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-2 -mt-[7vh]">	
             {gallery.map((image) => (
                 <ImageCard image={image} albumId={albumId} />
             ))}
        </div>
-    </div>
+    </SectionContainer>
 </Layout>
-
-<style>
-    .page{
-        background-size: 200% 200%;
-        animation: move 10s infinite;
-    }
-
-    @keyframes move {
-        0%{
-            background-position: 0% 50%;
-        }
-        50%{
-            background-position: 100% 50%;
-        }
-        100%{
-            background-position: 0% 50%;
-        }
-    }
-</style>

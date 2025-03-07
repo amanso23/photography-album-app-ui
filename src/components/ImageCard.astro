@@ -11,7 +11,8 @@ const { image, albumId } = Astro.props;
 
 const { 
     id: imageId,
-    cover
+    cover,
+    title
 } = image;
 
 ---
@@ -19,6 +20,7 @@ const {
 <a 
     href={`/albums/${albumId}/${imageId}`}
     class="w-full h-full aspect-square group overflow-hidden relative"
+    title={`Link to the image ${title}`} 
     >
         <picture>
             <img 
@@ -27,6 +29,6 @@ const {
                 class="aspect-square w-full h-full transition-all duration-300 group-hover:scale-105 object-cover"
                 transition:name={`transition-cover-${imageId}` } 
             >
-            <h2 class="absolute bottom-0 right-0 p-2 text-black text-[2vh] backdrop-blur-xs bg-white/20">{image.title}</h2>
+            <h2 class="absolute bottom-0 right-0 p-2 text-black bg-white/70  text-[2vh]">{title}</h2>
         </picture>
 </a>

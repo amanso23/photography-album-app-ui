@@ -35,7 +35,7 @@ export const albums: Album[] = [
   {
     id: 3,
     title: "Neon Density",
-    artist: "Kelton Solaris",
+    artist: "Solaris",
     cover: "https://images.unsplash.com/photo-1629729802306-2c196af7eef5", 
     background: backgrounds.deepSpace,
     description: "A study of the modern metropolis—skylines, reflections, and the interplay of artificial light with urban structures.",
@@ -55,11 +55,11 @@ export const albums: Album[] = [
     background: backgrounds.auroraBoreal,
     description: "A tribute to industrial architecture—bridges, factories, and the intricate dance between steel and shadow.",
     gallery: [
-      { id: 1, title: "Echo of Machines", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4" },
-      { id: 2, title: "Iron Horizon", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4" },
-      { id: 3, title: "Steel Web", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4" },
-      { id: 4, title: "Metal Veins", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4" },
-      { id: 5, title: "Industrial Shadows", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4" }
+      { id: 1, title: "Echo of Machines", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4", background: backgrounds.auroraBoreal },
+      { id: 2, title: "Iron Horizon", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4", background: backgrounds.cosmic },
+      { id: 3, title: "Steel Web", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4", background: backgrounds.emerald },
+      { id: 4, title: "Metal Veins", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4", background: backgrounds.ocean },
+      { id: 5, title: "Industrial Shadows", cover: "https://images.unsplash.com/photo-1623150502742-6a849aa94be4", background: backgrounds.deepSpace }
     ]
   },
   {
