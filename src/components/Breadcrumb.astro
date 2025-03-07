@@ -1,11 +1,12 @@
 ---
+import Separator from './Separator.astro';
+
 
 interface Props {
-    albumId: number;
-    albumTitle: string;
-    imageTitle: string;
+    albumId?: number;
+    albumTitle?: string;
+    imageTitle?: string;
 }
-
 
 const {
     albumId,
@@ -13,23 +14,39 @@ const {
     imageTitle
 } = Astro.props;
 
+const currentPageClass = "px-3 py-1 bg-black/20 ";
 
 ---
 
-<div class="text-[2vh] flex items-center gap-3 -mt-6 -ml-6 font-extralight px-2 py-2 bg-white/20 self-start ">
-    <a 
+<div class="text-[2vh] flex items-center gap-2 font-extralight self-start">
+    {albumId && albumTitle
+        ?  
+        <a 
         href={`/`}
         class="transition-all duration-300 hover:underline cursor-pointer"
     >
         Home
     </a>
-    <span> / </span> 
-    <a 
+    :
+    <h3 class={currentPageClass}>Home</h3>
+    }
+    
+
+    {albumId && <Separator />}
+    {albumId && albumTitle && (!imageTitle 
+        ? 
+        <h3 class={currentPageClass}>{albumTitle}</h3> 
+        : <a 
         href={`/albums/${albumId}`} 
         class="transition-all duration-300 hover:underline cursor-pointer"
     >
         {albumTitle}
-    </a> 
-    <span> / </span> 
-    <h3 class="italic">{imageTitle}</h3>
+    </a>  )
+        
+    }
+
+    {imageTitle && 
+        <Separator />
+        <h3 class={currentPageClass}>{imageTitle}</h3>
+    }
 </div>
