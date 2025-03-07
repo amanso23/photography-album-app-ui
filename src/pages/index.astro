@@ -1,6 +1,7 @@
 ---
 
 import AlbumCard from '../components/AlbumCard.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
 import { albums } from '../lib/albums';
@@ -14,8 +15,13 @@ const {
 
 <Layout title='Home'>
     <SectionContainer class={`flex flex-col gap-y-[3vh] ${homeBackground}`}>
-        <h1 class="font-extralight text-[2vh] px-2 py-2 backdrop-blur-xs bg-white/20 self-start">{albums.length} albums</h1>
-        <ul class="grid  grid-cols-1 lg:grid-cols-5 gap-2" >
+        <Breadcrumb />
+        <!-- <h1 class="font-extralight text-[2vh] leading-relaxed text-pretty">
+            Click on any image to explore each album, seamlessly navigating through pages with smooth animations. Each album features a gallery with photos and detailed descriptions. Enjoy a smooth and immersive browsing experience with animations between pages.
+            Built with <span class="font-semibold">Astro 5.4.1</span> and <span class="font-semibold">Tailwind CSS 4.0.9</span></span>.
+        </h1> -->
+        
+        <ul class="grid grid-cols-1 lg:grid-cols-5 gap-2" >
             {albums.map((album) => (
                 <li>
                     <AlbumCard 
@@ -26,5 +32,6 @@ const {
                 </li>
             ))}
         </ul>
+        <h1 class="font-extralight text-[2vh] px-2 py-2 backdrop-blur-xs bg-white/20 self-center">{albums.length} albums</h1>
     </SectionContainer>
 </Layout>
