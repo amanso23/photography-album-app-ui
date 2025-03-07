@@ -1,0 +1,35 @@
+---
+
+interface Props {
+    class: string;
+}
+
+const {
+    class: className
+} = Astro.props;
+
+---
+
+
+<section class={`w-full m-2 p-6 md:p-[10vh] lg:p-[6vh] page ${className}`}>
+    <slot />
+</section>
+
+<style>
+    .page{
+        background-size: 200% 200%;
+        animation: move 15s infinite;
+    }
+
+    @keyframes move {
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+</style>
