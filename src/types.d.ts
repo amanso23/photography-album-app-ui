@@ -14,9 +14,8 @@ export interface Album {
     id: number;
     title: string;
     cover: string;
+    background?: string;
   }
-
-
 
 
 export interface User {
