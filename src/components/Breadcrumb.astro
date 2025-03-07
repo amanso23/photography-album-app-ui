@@ -1,0 +1,35 @@
+---
+
+interface Props {
+    albumId: number;
+    albumTitle: string;
+    imageTitle: string;
+}
+
+
+const {
+    albumId,
+    albumTitle,
+    imageTitle
+} = Astro.props;
+
+
+---
+
+<div class="text-[2vh] flex items-center gap-3 -mt-6 -ml-6 font-extralight px-2 py-2 bg-white/20 self-start ">
+    <a 
+        href={`/`}
+        class="transition-all duration-300 hover:underline cursor-pointer"
+    >
+        Home
+    </a>
+    <span> / </span> 
+    <a 
+        href={`/albums/${albumId}`} 
+        class="transition-all duration-300 hover:underline cursor-pointer"
+    >
+        {albumTitle}
+    </a> 
+    <span> / </span> 
+    <h3 class="italic">{imageTitle}</h3>
+</div>
