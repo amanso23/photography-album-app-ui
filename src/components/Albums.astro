@@ -1,0 +1,20 @@
+---
+
+import { albums } from "../lib/albums";
+import AlbumCard from "./AlbumCard.astro";
+
+---
+
+<section class="flex flex-col gap-y-[3.5vh]">
+    <h3 class="font-semibold text-[2vh]">Albums</h3>
+    <ul class="flex flex-wrap lg:flex-col gap-4 md:gap-8 lg:gap-4">
+        {albums.map((album) => (
+            <li>
+                <AlbumCard 
+                    type="side"
+                    album={album}
+                />
+            </li>
+        ))}
+    </ul>
+</section>
