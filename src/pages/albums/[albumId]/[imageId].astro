@@ -1,9 +1,9 @@
 ---
 
-import Breadcrumb from '../../../components/Breadcrumb.astro';
-import SectionContainer from '../../../components/SectionContainer.astro';
-import Layout from '../../../layouts/Layout.astro';
-import { albums } from '../../../lib/albums';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import SectionContainer from '@/components/SectionContainer.astro';
+import Layout from '@/layouts/Layout.astro';
+import { albums } from '@/lib/albums';
 
 export const getStaticPaths = async() => {
     return albums.flatMap((album) => {
