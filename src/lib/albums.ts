@@ -24,7 +24,7 @@ export const albums: Album[] = [
     artist: "E. Nova",
     cover: "https://images.unsplash.com/photo-1533158170721-c66e9e3bea2b", 
     background: backgrounds.sunset,
-    description: "Exploring the essence of minimalism through photography—geometry, symmetry, and the power of negative space.",
+    description: "Exploring the essence of minimalism through photography, symmetry, and the power of negative space.",
     gallery: [
       { id: 1, title: "Horizon of Light", cover: "https://images.unsplash.com/photo-1553178525-6b73704b4fcf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
       { id: 2, title: "Muted Tones", cover: "https://images.unsplash.com/photo-1563192504-36ac622196dd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
