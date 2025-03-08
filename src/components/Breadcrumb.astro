@@ -24,6 +24,7 @@ const currentPageClass = "px-3 py-1 bg-black/20 ";
         <a 
         href={`/`}
         class="transition-all duration-300 hover:underline cursor-pointer"
+        title={`Go to Home`}
     >
         Home
     </a>
@@ -39,6 +40,7 @@ const currentPageClass = "px-3 py-1 bg-black/20 ";
         : <a 
         href={`/albums/${albumId}`} 
         class="transition-all duration-300 hover:underline cursor-pointer"
+        title={`Go to the album ${albumTitle}`}
     >
         {albumTitle}
     </a>  )
