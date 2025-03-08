@@ -14,7 +14,12 @@ export const getStaticPaths = async() => {
                         albumId: album.id, 
                         imageId: image.id
                     },
-                props: {...image, albumTitle: album.title}
+                props: 
+                    {
+                        ...image, 
+                        albumTitle: album.title, 
+                        albumBackground: album.background
+                    }
             }
         })
     })
@@ -29,23 +34,21 @@ const {
     title,
     cover,
     albumTitle,
-    background
+    albumBackground
 } = Astro.props;
 
 ---
 
 <Layout favicon={cover} title={`${albumTitle} - ${title}`}>
-    
-    <SectionContainer class={`flex flex-col ${background} `}>
+    <SectionContainer class={`flex flex-col gap-y-[4vh] ${albumBackground}`}>
         <Breadcrumb
             albumId={albumId}
             albumTitle={albumTitle}
             imageTitle={title}
         />
-        
         <img 
             src={cover} 
-            class="aspect-square w-[40vh] h-auto object-cover mt-10" 
+            class="w-auto h-auto aspect-square m-auto object-cover" 
             alt={title} 
             transition:name={`transition-cover-${imageId}`}  
         />
