@@ -34,6 +34,7 @@ const {
     title,
     cover,
     albumTitle,
+    source,
     albumBackground
 } = Astro.props;
 
@@ -52,6 +53,20 @@ const {
             alt={title} 
             transition:name={`transition-cover-${imageId}`}  
         />
-    
+
+        {source 
+            ? 
+            <a 
+                href={source}
+                class="px-2 py-2 border self-center transition-colors duration-300 hover:bg-white/20 text-[1.7vh]"
+                rel="noopener nooreferrer"
+                target="_blank"
+                title="Follow external link to the original source"
+            >
+                Original source
+            </a> 
+            : 
+                <h3 class="opacity-60 text-center text-[1.7vh]">No original source available</h3>
+        }
     </SectionContainer>
 </Layout>
